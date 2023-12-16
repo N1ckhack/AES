@@ -16,15 +16,15 @@ key = [
 
 print("\n1. Plaintext:")
 for row in plaintext:
-    print(' | '.join(format(byte, '02X') for byte in row))
+    print(' '.join(format(byte, '02X') for byte in row))
 
 
 print("\n2. Key:")
 for row in key:
-    print(' | '.join(format(byte, '02X') for byte in row))
+    print(' '.join(format(byte, '02X') for byte in row))
 
 
 encrypted_text = encrypt(plaintext, key)
 print("\n3. Encrypted Text:")
 for row in encrypted_text:
-    print(' | '.join(format(byte, '02X') for byte in row))
+    print(' '.join(format(byte, '02X') for byte in row))
